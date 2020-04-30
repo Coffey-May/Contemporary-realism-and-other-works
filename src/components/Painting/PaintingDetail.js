@@ -3,6 +3,7 @@ import { CustomerContext } from "../customers/CustomerProvider"
 import { LocationContext } from "../location/LocationProvider"
 import { PaintingContext } from "./PaintingProvider"
 import "./Paintings.css"
+import { Link } from "react-router-dom"
 
 
 
@@ -32,6 +33,8 @@ export default (props) => {
             <div className="painting__medium">{painting.medium}</div>
             <div className="painting__location">Location: {location.name}</div>
             <div className="painting__owner">Customer: {customer.name}</div>
+
+            <button className="returnToPaintingList"><Link className="navbar__link" to="/paintings">Paintings</Link></button>
 
 
             <button onClick={() => {

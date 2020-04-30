@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <Router>
-    <div class="crossfade">
+    <div className="crossfade">
       <figure></figure>
       <figure></figure>
       <figure></figure>

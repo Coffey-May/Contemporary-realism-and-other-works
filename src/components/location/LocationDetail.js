@@ -47,12 +47,12 @@ export default (props) => {
                     </Link>
                 }).reduce((acc, x) => acc === null ? [x] : [acc, ', ', x], null)
             }</div>
-            <div>patrons: {
+            {/* <div>patrons: {
                 filteredEmployees.map(fe => {
                     return fe.name
                 }).reduce((acc, x) => acc === null ? [x] : [acc, ', ', x], null)
 
-            }</div>
+            }</div> */}
 
         </section>
 

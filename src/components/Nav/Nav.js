@@ -16,11 +16,14 @@ export default (props) => {
                     <Link className="navbar__link" to="/paintings">Paintings</Link>
                 </li>
                 <li className="navbar__item">
+                <Link className="navbar__link" to="/orders">Cart</Link>
+                </li>
+                {/* <li className="navbar__item">
                     <Link className="navbar__link" to="/customers">Customers</Link>
                 </li>
                 <li className="navbar__item">
                     <Link className="navbar__link" to="/employees">Patrons</Link>
-                </li>
+                </li> */}
                 {
                     localStorage.getItem("painting_customer")
                         ? <li className="navbar__item">
