@@ -1,0 +1,22 @@
+.employee__name,.empListTitle{
+    color:white;
+}
+.employeeList{
+    display: flex;
+    flex-direction: row;
+   flex-wrap: wrap;
+    padding:2em;
+    height:70vh;
+    overflow: scroll;
+}
+.employee{
+    background-color: rgba(253, 253, 253, 0.356);
+padding:1em;
+width:15vw;
+display: flex; 
+flex-direction: column; 
+justify-content: space-around; 
+align-items: center;
+height:15em;
+margin: 0 5px;
+}
