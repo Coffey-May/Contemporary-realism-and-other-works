@@ -68,7 +68,7 @@ export default props => {
             <h2 className="paintingForm__title">{editMode ? "Update Painting" : "Admit Painting"}</h2>
             <fieldset>
                 <div className="form-group">
-                    <label htmlFor="name">Painting image: </label>
+                    <label htmlFor="image">Painting image: </label>
                     <input type="image" name="image" required autoFocus className="form-control"
                         proptype="varchar"
                         placeholder="Painting image"
@@ -82,7 +82,7 @@ export default props => {
                     <label htmlFor="name">Painting name: </label>
                     <input type="text" name="title" required autoFocus className="form-control"
                         proptype="varchar"
-                        placeholder="Animal name"
+                        placeholder="Painting Title"
                         defaultValue={painting.title}
                         onChange={handleControlledInputChange}
                     />
@@ -93,7 +93,7 @@ export default props => {
                     <label htmlFor="breed">Painting Medium: </label>
                     <input type="text" name="medium" required className="form-control"
                         proptype="varchar"
-                        placeholder="Animal breed"
+                        placeholder="Painting Medium"
                         defaultValue={painting.medium}
                         onChange={handleControlledInputChange}
                     />
@@ -116,7 +116,7 @@ export default props => {
                     </select>
                 </div>
             </fieldset>
-            <fieldset>
+            {/* <fieldset>
                 <div className="form-group">
                     <label htmlFor="treatment">Treatments: </label>
                     <textarea type="text" name="treatment" className="form-control"
@@ -125,7 +125,7 @@ export default props => {
                         onChange={handleControlledInputChange}>
                     </textarea>
                 </div>
-            </fieldset>
+            </fieldset> */}
             <button type="submit"
                 onClick={evt => {
                     evt.preventDefault()

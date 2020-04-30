@@ -43,9 +43,14 @@ export default (props) => {
             <div>Currently exhibiting: {
                 filteredPaintings.map(fp => {
                     return <Link key={fp.id} to={`/paintings/${fp.id}`}>
-                        {fp.title}
+                        {fp.title} {fp.medium}
+                       
+                    
+                      
                     </Link>
+                    
                 }).reduce((acc, x) => acc === null ? [x] : [acc, ', ', x], null)
+                
             }</div>
             {/* <div>patrons: {
                 filteredEmployees.map(fe => {
